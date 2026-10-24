@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X3LB6B3MEC"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-X3LB6B3MEC');
+	</script>
+	<!--end-->
+	
+	<link rel="icon" type="image/png" href="favicon.png"/>
+	<meta charset="UTF-8">
+	<meta name="google-site-verification" content="084uC_lvypzalUUyVsnjRlPCOmkHaQnE0Nw66iqQK0I" />
+	<title>Gallery</title>
+
+<style>
+        /* Best practice: include borders and padding in width calculations */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        html {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #E3E3E3;
+            color: #222;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .page-wrapper {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding-bottom: 3rem;
+        }
+
+        header {
+            background-color: #0cd460;
+            color: #111;
+            padding: 1.25rem;
+            text-align: center;
+            border: 2px solid #111;
+        }
+
+        header h2 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.75rem;
+        }
+
+        header p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        header a {
+            color: #0056b3;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: auto;
+            padding: 1rem 0;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            width: 100%;
+        }
+
+        @media (min-width: 640px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .gallery-item {
+            background-color: #ffffff;
+            border: 2px solid #111;
+            overflow: hidden;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-box {
+            width: 100%;
+            overflow: hidden;
+            background-color: #ccc;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-caption {
+            padding: 0.75rem 1rem;
+            text-align: center;
+            font-size: 0.95rem;
+            font-weight: 500;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <header>
+            <h2>Gallery</h2>
+            <p>Photos I have taken, mostly of trains. All photos here are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</p>
+        </header>
+
+        <main class="gallery-container">
+            <figure class="gallery-item">
+                <div class="image-box">
+                    <img src="photos/comet1.jpeg" alt="A passenger train runs behind Californian houses">
+                </div>
+                <figcaption class="gallery-caption">A Comet trainset running south on the <i>Pacific Surfliner</i><br><small>Solana Beach Station, CA - Oct. 24, 2026</small></figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <div class="image-box">
+                    <img src="photos/harpersferry_grafton.JPG" alt="A CSX train in the rain">
+                </div>
+                <figcaption class="gallery-caption">CSX 500 "Spirit of Grafton" pounds through the rain<br><small>Harper's Ferry, WV - Jul. 16, 2025</small></figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <div class="image-box">
+                    <img src="photos/harpersferry_pano.JPG" alt="A scenic view of Harper's Ferry, WV">
+                </div>
+                <figcaption class="gallery-caption">A look at Harper's Ferry across the Potomac<br><small>Maryland Heights Overlook, MD - Jul. 16, 2025</small></figcaption>
+            </figure>
+            
+            <figure class="gallery-item">
+                <div class="image-box">
+                    <img src="photos/fostoria6.JPG" alt="A Norfolk Southern train crosses a railway diamond">
+                </div>
+                <figcaption class="gallery-caption">An NS train crosses the diamond exiting Blair Yard<br><small>Fostoria, OH - Aug. 3, 2025</small></figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <div class="image-box">
+                    <img src="photos/fog.JPG" alt="A man stands gazing into foggy water">
+                </div>
+                <figcaption class="gallery-caption">A foggy day on Hoopers Island<br><small>Smoke Point, MD - Dec. 16, 2024</small></figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <div class="image-box">
+                    <img src="photos/fostoria1.jpeg" alt="New CSX locomotives from ground level">
+                </div>
+                <figcaption class="gallery-caption">A CSX lash-up at Fostoria<br><small>Fostoria, OH - Aug. 3, 2025</small></figcaption>
+            </figure>
+            
+            <figure class="gallery-item">
+                <div class="image-box">
+                    <img src="photos/fostoria2.JPG" alt="CSX locomotives pull a boxcar">
+                </div>
+                <figcaption class="gallery-caption">CSX 545 in YN2 paint at Fostoria<br><small>Fostoria, OH - Aug. 3, 2025</small></figcaption>
+            </figure>
+            
+            <figure class="gallery-item">
+                <div class="image-box">
+                    <img src="photos/fostoria3.JPG" alt="A CSX train crosses a railway diamond">
+                </div>
+                <figcaption class="gallery-caption">Waves from the engineer as CSX 5315 crosses a diamond<br><small>Fostoria, OH - Aug. 3, 2025</small></figcaption>
+            </figure>
+            
+            <figure class="gallery-item">
+                <div class="image-box">
+                    <img src="photos/fostoria4.JPG" alt="A Norfolk Southern train rounds a corner">
+                </div>
+                <figcaption class="gallery-caption">NS 4689 leads its train around a corner<br><small>Fostoria, OH - Aug. 3, 2025</small></figcaption>
+            </figure>
+            
+            <figure class="gallery-item">
+                <div class="image-box">
+                    <img src="photos/fostoria5.JPG" alt="A long line of tanker railcars">
+                </div>
+                <figcaption class="gallery-caption">A gargantuan consist of tanker cars enters NS' Blair Yard<br><small>Fostoria, OH - Aug. 3, 2025</small></figcaption>
+            </figure>
+            
+            <figure class="gallery-item">
+                <div class="image-box">
+                    <img src="photos/harpersferry_amtk50.JPG" alt="Amtrak 50th anniversary locomotive">
+                </div>
+                <figcaption class="gallery-caption">AMTK 301 in 50th Anniversary paint at Harper's Ferry<br><small>Harper's Ferry, WV - Jul. 16, 2025</small></figcaption>
+            </figure>
+            
+            <figure class="gallery-item">
+                <div class="image-box">
+                    <img src="photos/longbridge1.JPG" alt="A new Amtrak locomotive on a sunny day">
+                </div>
+                <figcaption class="gallery-caption">An Amtrak Charger locomotive pulls a train towards DC<br><small>Long Bridge Park, VA - Jul. 12, 2025</small></figcaption>
+            </figure>
+            
+            <figure class="gallery-item">
+                <div class="image-box">
+                    <img src="photos/newark1.JPG" alt="A snowy Amtrak train passes under a bridge">
+                </div>
+                <figcaption class="gallery-caption">A snow-caked train on the <i>Northeast Regional</i><br><small>Newark, DE - Jan. 20, 2025</small></figcaption>
+            </figure>
+        </main>
+    </div>
+
+    <script>
+    // Listen for clicks inside the gallery to open images in a new tab
+    document.querySelector('.gallery-container').addEventListener('click', (e) => {
+        if (e.target.tagName === 'IMG') {
+            window.open(e.target.src, '_blank');
+        }
+    });
+    </script>
+
+</body>
+</html>
